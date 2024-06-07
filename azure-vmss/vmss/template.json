@@ -1,0 +1,47 @@
+{
+  "builders": [{
+    "type": "azure-arm",
+
+    "tenant_id": "XXXXXXXXX-3XXX-XXXX-XXXX-XXXXXXXXXXX",
+    "subscription_id": "XXXXXXXXX-XXXX-XXXX-9XX4-XXXXXXXXXX",
+
+    "client_id": "cXXXXXXXXXX-cXXX-XXXX-XXX7-XXXXXXXXXXXX",
+    "client_secret": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "managed_image_resource_group_name": "ritesh",
+    "managed_image_name": "GoldenAMI-{{timestamp}}",
+
+    "os_type": "Linux",
+    "image_publisher": "OpenLogic",
+    "image_offer": "CentOS",
+    "image_sku": "7_9-gen2",
+
+    "azure_tags": {
+        "dept": "DevOps",
+        "Environment": "Staging",
+        "Description": "packer-tomcat-{{timestamp}}"
+    },
+
+    "location": "East US",
+    "vm_size": "Standard_B2s",
+    "shared_image_gallery_destination": {
+       "resource_group": "ritesh",
+       "gallery_name": "nhimagegallery",
+       "image_name": "demo",
+       "image_version": "1.0.0"
+    }
+  }],
+  "provisioners": [
+    {
+      "type": "shell",
+      "inline": [
+        "sudo yum install -y epel-release",
+        "sudo yum install -y ansible"
+      ]
+    },
+    {
+      "type": "ansible-local",
+      "playbook_file": "playbook.yaml" ,
+      "pause_before": "100s"
+    }
+  ]
+}
