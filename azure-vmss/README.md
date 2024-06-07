@@ -5,4 +5,5 @@ Please provide the information in the terraform script as wriiten below
 2. Provide tenant id, subscription id, client id and client secret in the file template.json.
 3. Provide public SSH key in the file custom_data.sh.
 4. Provide tenant id and subscription id in the file provider.tf.
+5. I have used Azure CLI to create Azure Compute Gallery and gallery image definition which is idempotent in nature that means if Azure Compute Gallery or gallery image definition already exists then it will not create the resource but will not through any error in create-infra.sh.
 ````
