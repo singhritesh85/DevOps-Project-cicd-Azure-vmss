@@ -43,6 +43,7 @@ Finally Application has been accessed as shown in the screenshot attached below.
 <br><br/>
 ```
 Source Code:-  https://github.com/singhritesh85/aws-rds-java-azure-vmss.git
+template.json, playbook.yaml, create-infra.sh and azure-pipelines.yml files are present in this Repo which whill be used during Deployment.
 ```
 <br><br/>
 <br><br/>
