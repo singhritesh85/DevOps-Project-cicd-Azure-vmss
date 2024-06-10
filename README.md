@@ -32,4 +32,24 @@ Finally Application has been accessed as shown in the screenshot attached below.
 ![image](https://github.com/singhritesh85/DevOps-Project-cicd-Azure-vmss/assets/56765895/899da9c4-8e79-4096-abd2-16be9cbb97c4)
 ![image](https://github.com/singhritesh85/DevOps-Project-cicd-Azure-vmss/assets/56765895/62ba85ab-41ec-4378-ab5b-4e636ec652af)
 
-
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+```
+Source Code:-  https://github.com/singhritesh85/aws-rds-java-azure-vmss.git
+```
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+```
+Reference:-   https://ashok198510.hashnode.dev/cloud-native-two-tier-application-deployment-with-eks-tomcat-and-rds-in-aws
+              https://github.com/Ashoksana/aws-rds-java.git
+```
